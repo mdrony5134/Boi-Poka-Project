@@ -6,12 +6,17 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ListedBooks from "./pages/ListedBooks/ListedBooks.jsx";
 import PagesToRead from "./pages/PageToRead/PagesToRead.jsx";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage.jsx";
+import Home from "./pages/Home/Home.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "/listed-read-books",
         element: <ListedBooks />,
