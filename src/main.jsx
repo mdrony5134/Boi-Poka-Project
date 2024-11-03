@@ -7,6 +7,7 @@ import ListedBooks from "./pages/ListedBooks/ListedBooks.jsx";
 import PagesToRead from "./pages/PageToRead/PagesToRead.jsx";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage.jsx";
 import Home from "./pages/Home/Home.jsx";
+import SingleBookDetails from "./pages/SingleBookDetails/SingleBookDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/single-bookdetails/:bookId",
+        element: <SingleBookDetails />,
       },
       {
         path: "/listed-read-books",

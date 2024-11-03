@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function NotFoundPage() {
   return (
-    <div className="bg-gray-100 h-screen flex flex-col items-center justify-center">
+    <div className="bg-gray-100 max-w-7xl rounded-2xl mx-auto flex flex-col items-center justify-center pb-24 mt-10">
       <div className="mt-24 m-auto">
         <svg
-          className="emoji-404"
+          className="emoji-404 ml-36"
           enableBackground="new 0 0 226 249.135"
           height="249.135"
           id="Layer_1"
@@ -93,12 +94,12 @@ function NotFoundPage() {
         </div>
       </div>
       <div className="mt-6">
-        <a
-          href="#"
+        <Link
+          to="/"
           className="text-gray-500 font-mono text-xl bg-gray-200 p-3 rounded-md hover:shadow-md"
         >
           Go back
-        </a>
+        </Link>
       </div>
     </div>
   );
